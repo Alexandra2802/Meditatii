@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/style.css">   
+        <title>Meditatii</title>    
+    </head>
+    <body>
+        <header> 
+            <ul class="navbar">
+                <li><a href="index.html"><img src="images/logo-no-background.png" alt="logo"></a></li>
+                <li><a href="calendar.html" data-hover="Calendar" class="animated current">Calendar</a></li>
+                <li><a href="homework.html" data-hover="Teme" class="animated">Teme</a></li>
+                <li><a href="search.html" data-hover="Cauta" class="animated">Cauta</a></li>
+                <li><a href="login.html" data-hover="Login" class="animated">Login</a></li>
+            </ul>
+        </header>
+        <div id="calendar-container">
+          <div id="header">
+              <div id="monthDisplay"></div>
+              <button id="backButton">Back</button>
+              <button id="currentButton">Current</button>
+              <button id="nextButton">Next</button>
+          </div>
+  
+          <div id="weekdays">
+              <div><b>Luni</b></div>
+              <div><b>Marti</b></div>
+              <div><b>Miercuri</b></div>
+              <div><b>Joi</b></div>
+              <div><b>Vineri</b></div>
+              <div><b>Sambata</b></div>
+              <div><b>Duminica</b></div>
+          </div>
+  
+          <div id="calendar"></div>
+      </div>
+  
+      <div id="newEventModal">
+          <h2>New Event</h2>
+          <input id="eventTitleInput" placeholder="Event Title">
+          <input id="eventTimeInput" placeholder="Event Time">
+          <button id="saveButton">Save</button>
+          <button id="cancelButton">Cancel</button>
+      </div>
+  
+      <div id="deleteEventModal">
+          <!-- <h2>Event</h2> -->
+          <h2 id="eventText">Event</h2>
+          <button id="deleteButton">Delete</button>
+          <button id="closeButton">Close</button>
+      </div>
+  
+      <div id="modalBackDrop"></div>
+        <footer>
+            <p>
+                Footer
+            </p>
+        </footer>
+        <script src="scripts/calendar.js"></script>
+    </body>
+</html>

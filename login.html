@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Meditatii</title>
+    </head>
+    <body>
+      <header> 
+        <ul class="navbar">
+            <li><a href="index.html"><img src="images/logo-no-background.png" alt="logo"></a></li>
+            <li><a href="calendar.html" data-hover="Calendar" class="animated">Calendar</a></li>
+            <li><a href="homework.html" data-hover="Teme" class="animated">Teme</a></li>
+            <li><a href="search.html" data-hover="Cauta" class="animated">Cauta</a></li>
+            <li><a href="login.html" data-hover="Login" class="animated current">Login</a></li>
+        </ul>
+    </header>
+      <div class="form-container">
+        <div class="form-header">
+            <h2>Log In</h2>
+        </div>
+        <form class="form" id="form" method="post" action="login.php">
+            <div class="form-control ">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Parola</label>
+                <input type="password" id="password" name="password">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button type="submit" name="login-user">Log In</button>
+            <button type="button"><a  href="register.html">Creeaza Cont</a></button>
+        </form>
+    </div>
+    <footer>
+      <p>
+          Footer
+      </p>
+    </footer>
+    <script src="scripts/login.js"></script>
+    </body>
+</html>
